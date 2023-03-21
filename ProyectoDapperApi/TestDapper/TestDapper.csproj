@@ -27,4 +27,8 @@
     <ProjectReference Include="..\UseCases\UseCases.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="TestRecetaMedica\" />
+  </ItemGroup>
+
 </Project>
