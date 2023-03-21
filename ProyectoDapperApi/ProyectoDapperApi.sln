@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33424.131
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoDapperApi", "ProyectoDapperApi\ProyectoDapperApi.csproj", "{D39B3867-20FB-4920-B441-96B4206EDF38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProyectoDapperApi", "ProyectoDapperApi\ProyectoDapperApi.csproj", "{D39B3867-20FB-4920-B441-96B4206EDF38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Api", "Api", "{443C045C-970B-4F34-B712-DB71CFAD7D59}"
 EndProject
@@ -11,13 +11,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{66D156
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{40AA177A-6AA6-4E40-B9B3-ABEBFA86A95E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{88A78064-5D47-40D4-8F1D-7D6A450109F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Entities", "Entities\Entities.csproj", "{88A78064-5D47-40D4-8F1D-7D6A450109F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UseCases", "UseCases\UseCases.csproj", "{68FBE1BA-29BF-451E-92A2-C7A987B39E39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UseCases", "UseCases\UseCases.csproj", "{68FBE1BA-29BF-451E-92A2-C7A987B39E39}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DrivenAdapter", "DrivenAdapter\DrivenAdapter.csproj", "{876DB16B-AF36-42B5-ACC2-C042BB2E4F22}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DrivenAdapter", "DrivenAdapter\DrivenAdapter.csproj", "{876DB16B-AF36-42B5-ACC2-C042BB2E4F22}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{FFE74BE4-E18D-4D9E-BA9E-8A5112DA3487}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestDapper", "TestDapper\TestDapper.csproj", "{F217B3D5-3358-4CDC-AC47-710D1DF0ADA4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,6 +43,10 @@ Global
 		{876DB16B-AF36-42B5-ACC2-C042BB2E4F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{876DB16B-AF36-42B5-ACC2-C042BB2E4F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{876DB16B-AF36-42B5-ACC2-C042BB2E4F22}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F217B3D5-3358-4CDC-AC47-710D1DF0ADA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F217B3D5-3358-4CDC-AC47-710D1DF0ADA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F217B3D5-3358-4CDC-AC47-710D1DF0ADA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F217B3D5-3358-4CDC-AC47-710D1DF0ADA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -50,6 +56,7 @@ Global
 		{88A78064-5D47-40D4-8F1D-7D6A450109F1} = {66D156F9-5EFB-4E84-8BF6-94CC11879948}
 		{68FBE1BA-29BF-451E-92A2-C7A987B39E39} = {66D156F9-5EFB-4E84-8BF6-94CC11879948}
 		{876DB16B-AF36-42B5-ACC2-C042BB2E4F22} = {40AA177A-6AA6-4E40-B9B3-ABEBFA86A95E}
+		{F217B3D5-3358-4CDC-AC47-710D1DF0ADA4} = {FFE74BE4-E18D-4D9E-BA9E-8A5112DA3487}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6D20DE11-7230-4732-868E-298E15393E32}

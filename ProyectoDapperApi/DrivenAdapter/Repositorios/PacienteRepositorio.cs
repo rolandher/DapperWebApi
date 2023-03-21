@@ -44,6 +44,15 @@ namespace DrivenAdapter.Repositorios
             return result.ToList();
         }        
 
+        public async Task<Paciente> ObtenerPacientePorId(int id)
+        {
+            var connection = await _dbConnectionBuilder.CreateConnectionAsync();
+            string sqlQuery = $"SELECT * FROM {tableName} WHERE id = @id";
+            var result = await connection.QuerySingleAsync<Paciente>(sqlQuery, new { id });
+            connection.Close();
+            return result;
+        }
+
 
     }
 }

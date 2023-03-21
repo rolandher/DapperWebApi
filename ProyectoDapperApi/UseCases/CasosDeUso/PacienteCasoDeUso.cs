@@ -27,6 +27,11 @@ namespace UseCases.CasosDeUso
         {
             return await _pacienteRepositorio.ObtenerListaPacientes();
         }       
+
+        public async Task<Paciente> ObtenerPacientePorId(int id)
+        {
+            return await _pacienteRepositorio.ObtenerPacientePorId(id);
+        }
        
     }
    

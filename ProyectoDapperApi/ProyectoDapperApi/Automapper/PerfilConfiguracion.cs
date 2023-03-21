@@ -11,6 +11,7 @@ namespace ProyectoDapperApi.Automapper
         {
             CreateMap<IngresarPaciente, Paciente>().ReverseMap();
             CreateMap<IngresarDoctor, Doctor>().ReverseMap();
+            CreateMap<IngresarRecetaMedica, RecetaMedica>().ReverseMap();            
         }
     }
 }

@@ -25,6 +25,9 @@ builder.Services.AddScoped<IPacienteRepositorio, PacienteRepositorio>();
 builder.Services.AddScoped<IDoctorUseCase, DoctorCasoDeUso>();
 builder.Services.AddScoped<IDoctorRepositorio, DoctorRepositorio>();
 
+builder.Services.AddScoped<IRecetaMedicaUseCase, RecetaMedicaCasoDeUso>();
+builder.Services.AddScoped<IRecetaMedicaRepositorio, RecetaMedicaRepositorio>();
+
 
 
 builder.Services.AddTransient<IDbConnectionBuilder>(e =>
