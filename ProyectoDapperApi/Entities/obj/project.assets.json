@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj",
+      "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj",
       "projectName": "Entities",
-      "projectPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj",
+      "projectPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj",
       "packagesPath": "C:\\Users\\Rolando\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\obj\\",
+      "outputPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Rolando\\AppData\\Roaming\\NuGet\\NuGet.Config",

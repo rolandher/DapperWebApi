@@ -21,6 +21,20 @@ namespace DrivenAdapter.Repositorios
             _dbConnectionBuilder = dbConnectionBuilder;
         }
 
+        public async Task<Paciente> AgregarPaciente(Paciente paciente)
+        {
+            var connection = await _dbConnectionBuilder.CreateConnectionAsync();
+            var agregarPaciente = new
+            {
+                nombre = paciente.Nombre,
+                fecha_nacimiento = paciente.Fecha_Nacimiento,
+                sexo = paciente.Sexo
+            };
+            string sqlQuery = $"INSERT INTO {tableName} (nombre, fecha_nacimiento, sexo)VALUES(@nombre, @fecha_nacimiento, @sexo)";
+            var rows = await connection.ExecuteAsync(sqlQuery, agregarPaciente);
+            return paciente;
+        }
+
         public async Task<List<Paciente>> ObtenerListaPacientes()
         {
             var connection = await _dbConnectionBuilder.CreateConnectionAsync();
@@ -28,21 +42,7 @@ namespace DrivenAdapter.Repositorios
             var result = await connection.QueryAsync<Paciente>(sqlQuery);
             connection.Close();
             return result.ToList();
-        }
-
-        public async Task<Paciente> AgregarPaciente(Paciente paciente)
-        {
-            var connection = await _dbConnectionBuilder.CreateConnectionAsync();
-            var agregarPaciente = new
-            {
-                nombre = paciente.Nombre,
-                fecha = paciente.Fecha_Nacimiento,
-                premios = paciente.Sexo,
-            };
-            string sqlQuery = $"INSERT INTO {tableName} (nombre, fecha_nacimiento, sexo)VALUES(@nombre, @fecha, @sexo)";
-            var rows = await connection.ExecuteAsync(sqlQuery, agregarPaciente);
-            return paciente;
-        }
+        }        
 
 
     }

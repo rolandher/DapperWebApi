@@ -22,6 +22,9 @@ builder.Services.AddAutoMapper(config => config.AddDataReaderMapping(), typeof(P
 builder.Services.AddScoped<IPacienteUseCase, PacienteCasoDeUso>();
 builder.Services.AddScoped<IPacienteRepositorio, PacienteRepositorio>();
 
+builder.Services.AddScoped<IDoctorUseCase, DoctorCasoDeUso>();
+builder.Services.AddScoped<IDoctorRepositorio, DoctorRepositorio>();
+
 
 
 builder.Services.AddTransient<IDbConnectionBuilder>(e =>

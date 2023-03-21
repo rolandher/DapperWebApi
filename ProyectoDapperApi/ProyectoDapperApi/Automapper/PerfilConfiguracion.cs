@@ -10,6 +10,7 @@ namespace ProyectoDapperApi.Automapper
         public PerfilConfiguracion()
         {
             CreateMap<IngresarPaciente, Paciente>().ReverseMap();
+            CreateMap<IngresarDoctor, Doctor>().ReverseMap();
         }
     }
 }

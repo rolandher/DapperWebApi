@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj": {}
+    "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj": {
+    "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj",
+        "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj",
         "projectName": "DrivenAdapter",
-        "projectPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj",
+        "projectPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj",
         "packagesPath": "C:\\Users\\Rolando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\DrivenAdapter\\obj\\",
+        "outputPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\DrivenAdapter\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rolando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj"
+              "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\UseCases\\UseCases.csproj": {
-                "projectPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\UseCases\\UseCases.csproj"
+              "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\UseCases\\UseCases.csproj": {
+                "projectPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\UseCases\\UseCases.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj": {
+    "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\Rolando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rolando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -143,14 +143,14 @@
         }
       }
     },
-    "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\UseCases\\UseCases.csproj": {
+    "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\UseCases\\UseCases.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\UseCases\\UseCases.csproj",
+        "projectUniqueName": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\UseCases\\UseCases.csproj",
         "projectName": "UseCases",
-        "projectPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\UseCases\\UseCases.csproj",
+        "projectPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\UseCases\\UseCases.csproj",
         "packagesPath": "C:\\Users\\Rolando\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\UseCases\\obj\\",
+        "outputPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\UseCases\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Rolando\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -167,8 +167,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\Entities\\Entities.csproj"
+              "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\Entities\\Entities.csproj"
               }
             }
           }

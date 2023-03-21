@@ -15,10 +15,16 @@ namespace ProyectoDapperApi.Controllers
         private readonly IMapper _mapper;
 
 
-        public PacienteController(IPacienteUseCase directorUseCase, IMapper mapper)
+        public PacienteController(IPacienteUseCase pacienteUseCase, IMapper mapper)
         {
-            _pacienteUseCase = directorUseCase;
+            _pacienteUseCase = pacienteUseCase;
             _mapper = mapper;
+        }
+
+        [HttpPost]
+        public async Task<Paciente> Agregar_Paciente(IngresarPaciente command)
+        {
+            return await _pacienteUseCase.AgregarPaciente(_mapper.Map<Paciente>(command));
         }
 
         [HttpGet]
@@ -27,10 +33,6 @@ namespace ProyectoDapperApi.Controllers
             return await _pacienteUseCase.ObtenerListaPacientes();
         }
 
-        [HttpPost]
-        public async Task<Paciente> Agregar_Paciente(IngresarPaciente command)
-        {
-            return await _pacienteUseCase.AgregarPaciente(_mapper.Map<Paciente>(command));
-        }
+     
     }
 }

@@ -18,15 +18,15 @@ namespace UseCases.CasosDeUso
             _pacienteRepositorio = pacienteRepositorio;
         }
 
-        public async Task<List<Paciente>> ObtenerListaPacientes()
-        {
-            return await _pacienteRepositorio.ObtenerListaPacientes();
-        }
-
         public async Task<Paciente> AgregarPaciente(Paciente paciente)
         {
             return await _pacienteRepositorio.AgregarPaciente(paciente);
         }
+
+        public async Task<List<Paciente>> ObtenerListaPacientes()
+        {
+            return await _pacienteRepositorio.ObtenerListaPacientes();
+        }       
        
     }
    

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "o4sIBgMZ0pzkG1UZ/jVH8eKvIFjHYKMPWXs/xp3G5aKiHj6cD0gO/sxjQWHVQQuOkIzcepZOCh4mOG2IPntA2w==",
+  "dgSpecHash": "TQpvuUb711bvX+NJORcICapJi0Kgm1os324tyTylENriOq8wawCQNcJ/TBM/W3YrbFyP3i9Z7tMQ5wXwmEczTA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Rolando\\Desktop\\proyectoDDD\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj",
+  "projectFilePath": "C:\\Users\\Rolando\\Desktop\\ss\\ProyectoDapperApi\\DrivenAdapter\\DrivenAdapter.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Rolando\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Rolando\\.nuget\\packages\\automapper.data\\7.0.2\\automapper.data.7.0.2.nupkg.sha512",
