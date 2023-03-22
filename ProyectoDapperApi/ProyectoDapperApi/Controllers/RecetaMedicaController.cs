@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Entities.Comandos;
+using Entities.Entidades;
 using Entities.Entities;
 using Microsoft.AspNetCore.Mvc;
 using UseCases.PuertaEntrada;
@@ -28,7 +29,8 @@ namespace ProyectoDapperApi.Controllers
         }
 
         [HttpGet]
-        public async Task<List<RecetaMedica>> Obtener_Listado_RecetaMedica(int id)
+        [Route("{id:int}")]
+        public async Task<RecetaMedicaPaciente> Obtener_Listado_RecetaMedica(int id)
         {
             return await _recetaMedicaUseCase.ObtenerListaRecetaMedica(id);
         }

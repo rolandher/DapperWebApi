@@ -1,4 +1,5 @@
 ﻿using Entities.Comandos;
+using Entities.Entidades;
 using Entities.Entities;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,6 @@ namespace UseCases.PuertaEntrada
     public interface IRecetaMedicaUseCase
     {
         Task<RecetaMedica> AgregarRecetaMedica(RecetaMedica recetaMedica);
-        Task<List<RecetaMedica>> ObtenerListaRecetaMedica(int id);
+        Task<RecetaMedicaPaciente> ObtenerListaRecetaMedica(int id);
     }
 }

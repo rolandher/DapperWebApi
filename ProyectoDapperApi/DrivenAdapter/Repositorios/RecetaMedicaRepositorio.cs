@@ -1,5 +1,6 @@
 ﻿using Dapper;
 using DrivenAdapter.PuertaEnlace;
+using Entities.Entidades;
 using Entities.Entities;
 using System;
 using System.Collections.Generic;
@@ -25,7 +26,7 @@ namespace DrivenAdapter.Repositorios
 
 
             var connection = await _dbConnectionBuilder.CreateConnectionAsync();
-            
+
             var agregarRecetaMedica = new
             {
                 nombre_medicina = recetaMedica.Nombre_Medicina,
@@ -36,16 +37,35 @@ namespace DrivenAdapter.Repositorios
             string sqlQuery = $"INSERT INTO {tableName} (nombre_medicina, cantidad, id_paciente, id_doctor)VALUES(@nombre_medicina, @cantidad, @id_paciente, @id_doctor)";
             var rows = await connection.ExecuteAsync(sqlQuery, agregarRecetaMedica);
             return recetaMedica;
-           
+
         }
 
-        public async Task<List<RecetaMedica>> ObtenerListaRecetaMedica(int id)
+        public async Task<RecetaMedicaPaciente> ObtenerListaRecetaMedica(int id)
         {
             var connection = await _dbConnectionBuilder.CreateConnectionAsync();
-            string sqlQuery = $"SELECT * FROM {tableName}";
-            var result = await connection.QueryAsync<RecetaMedica>(sqlQuery);
-            connection.Close();
-            return result.ToList();
+            var recetaQuery = $"SELECT * FROM {tableName} WHERE id = @id";
+            var doctorQuery =  $"SELECT * FROM Doctores WHERE id = @id";
+            var pacienteQuery = $"SELECT * FROM pacientes WHERE id = @id";
+            var multiQuery = $"{recetaQuery};{doctorQuery};{pacienteQuery}";
+
+            using (var multi = await connection.QueryMultipleAsync(multiQuery, new { id }))
+            {
+                var receta = await multi.ReadFirstOrDefaultAsync<RecetaMedica>();
+                var doctor = await multi.ReadFirstOrDefaultAsync<Doctor>();
+                var paciente = await multi.ReadFirstOrDefaultAsync<Paciente>();
+
+                return new RecetaMedicaPaciente
+                {
+                    Id = receta.Id,
+                    Nombre_Medicina = receta.Nombre_Medicina,
+                    Cantidad = receta.Cantidad,
+                    Doctor = doctor,                    
+                    Paciente = paciente,
+                    
+                };             
+                   
+               
+            }
         }
 
 

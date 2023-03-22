@@ -41,6 +41,19 @@ namespace TestDapper.TestPaciente
             Assert.IsType<Paciente>(result);
         }
 
+        [Fact]
+        public async Task ObtenerPacientePorId()
+        {
+
+            var pacienteRepositorioMock = new Mock<IPacienteRepositorio>();
+
+            pacienteRepositorioMock.Setup(x => x.ObtenerPacientePorId(It.IsAny<int>())).ReturnsAsync(new Paciente());
+            var pacienteCasoDeUso = new PacienteCasoDeUso(pacienteRepositorioMock.Object);
+            var result = await pacienteCasoDeUso.ObtenerPacientePorId(1);
+            Assert.NotNull(result);
+            Assert.IsType<Paciente>(result);
+        }
+
 
 
     }

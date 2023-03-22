@@ -1,4 +1,5 @@
-﻿using Entities.Entities;
+﻿using Entities.Entidades;
+using Entities.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -23,24 +24,11 @@ namespace UseCases.CasosDeUso
         }
 
         public async Task<RecetaMedica> AgregarRecetaMedica(RecetaMedica recetaMedica)
-        {
-            var paciente = await _pacienteUseCase.AgregarPaciente(recetaMedica.Paciente);
-            var doctor = await _doctorUseCase.AgregarDoctor(recetaMedica.Doctor);
-
-            if (paciente == null)
-            {
-                throw new Exception("El paciente no existe");
-            }
-
-            if (doctor == null)
-            {
-                throw new Exception("El doctor no existe");
-            }
-
+        {          
             return await _recetaMedicaRepositorio.AgregarRecetaMedica(recetaMedica);
         }
 
-        public async Task<List<RecetaMedica>> ObtenerListaRecetaMedica(int id)
+        public async Task<RecetaMedicaPaciente> ObtenerListaRecetaMedica(int id)
         {
             return await _recetaMedicaRepositorio.ObtenerListaRecetaMedica(id);
         }

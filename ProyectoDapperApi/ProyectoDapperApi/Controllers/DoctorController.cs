@@ -33,6 +33,14 @@ namespace ProyectoDapperApi.Controllers
             return await _doctorUseCase.ObtenerListaDoctores();
         }
 
+       
+        [HttpPost]
+        [Route("ObtenerId")]
+        public async Task<Doctor> ObtenerIdDoctor(int id)
+        {
+            return await _doctorUseCase.ObtenerDoctorPorId(id);
+        }
+
 
     }
 }
