@@ -46,8 +46,8 @@ namespace DrivenAdapter.Repositorios
         public async Task<Doctor> ObtenerDoctorPorId(int id)
         {
             var connection = await _dbConnectionBuilder.CreateConnectionAsync();
-            string sqlQuery = $"SELECT * FROM {tableName} WHERE id_doctor = @id";
-            var result = await connection.QueryFirstOrDefaultAsync<Doctor>(sqlQuery, new { id });
+            string sqlQuery = $"SELECT * FROM {tableName} WHERE id = @id";
+            var result = await connection.QuerySingleAsync<Doctor>(sqlQuery, new { id });
             connection.Close();
             return result;
         }

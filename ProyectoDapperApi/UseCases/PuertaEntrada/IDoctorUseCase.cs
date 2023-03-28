@@ -9,8 +9,9 @@ namespace UseCases.PuertaEntrada
 {
     public interface IDoctorUseCase
     {
-        Task<List<Doctor>> ObtenerListaDoctores();
+
         Task<Doctor> AgregarDoctor(Doctor doctor);
+        Task<List<Doctor>> ObtenerListaDoctores();        
 
         Task<Doctor> ObtenerDoctorPorId(int id);
     }

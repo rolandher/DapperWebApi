@@ -34,7 +34,7 @@ namespace ProyectoDapperApi.Controllers
         }
 
        
-        [HttpPost]
+        [HttpGet]
         [Route("ObtenerId")]
         public async Task<Doctor> ObtenerIdDoctor(int id)
         {

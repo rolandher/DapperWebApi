@@ -33,9 +33,9 @@ namespace ProyectoDapperApi.Controllers
             return await _pacienteUseCase.ObtenerListaPacientes();
         }
 
-        //crear metodo obtener id del paciente
+        
 
-        [HttpPost]
+        [HttpGet]
         [Route("ObtenerId")]
         public async Task<Paciente> ObtenerIdPaciente(int id)
         {
