@@ -28,10 +28,16 @@ namespace UseCases.CasosDeUso
             return await _pacienteRepositorio.ObtenerListaPacientes();
         }       
 
-        public async Task<Paciente> ObtenerPacientePorId(int id)
+        public async Task<Paciente> ObtenerPacientePorId(string id)
         {
             return await _pacienteRepositorio.ObtenerPacientePorId(id);
         }
+
+        public async Task<Paciente> ActualizarPaciente(Paciente paciente)
+        {
+            return await _pacienteRepositorio.ActualizarPaciente(paciente);
+        }     
+
        
     }
    

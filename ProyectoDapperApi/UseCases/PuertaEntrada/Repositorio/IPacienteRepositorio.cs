@@ -9,9 +9,11 @@ namespace UseCases.PuertaEntrada.Repositorio
 {
     public interface IPacienteRepositorio
     {
+        
         Task<Paciente> AgregarPaciente(Paciente paciente);
-        Task<List<Paciente>> ObtenerListaPacientes();        
+        Task<List<Paciente>> ObtenerListaPacientes();       
 
-        Task<Paciente> ObtenerPacientePorId(int id);
+        Task<Paciente> ObtenerPacientePorId(string id);
+        Task<Paciente> ActualizarPaciente(Paciente paciente);
     }
 }

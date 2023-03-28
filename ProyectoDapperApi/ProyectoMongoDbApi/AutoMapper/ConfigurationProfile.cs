@@ -12,6 +12,7 @@ namespace ProyectoMongoDbApi.AutoMapper
         public ConfigurationProfile()
         {
             CreateMap<IngresarPaciente, Paciente>().ReverseMap();
+            
             CreateMap<EntidadPaciente, Paciente>().ReverseMap();
         }
     }

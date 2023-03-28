@@ -28,8 +28,8 @@ namespace DrivenAdapterMongoDb.Pacientes
 
         public async Task<Paciente> AgregarPaciente(Paciente paciente)
         {
-            var registrarPaciente = _mapper.Map<EntidadPaciente>(paciente);
-            await _coleccion.InsertOneAsync(registrarPaciente);
+            var agregarPaciente = _mapper.Map<EntidadPaciente>(paciente);
+            await _coleccion.InsertOneAsync(agregarPaciente);
             return paciente;
         }
 
@@ -41,9 +41,20 @@ namespace DrivenAdapterMongoDb.Pacientes
 
         }
 
-        public Task<Paciente> ObtenerPacientePorId(int id)
+        public async Task<Paciente> ObtenerPacientePorId(string id)
         {
-            throw new NotImplementedException();
+            var obtenerPacientePorId = await _coleccion.FindAsync(Builders<EntidadPaciente>.Filter.Eq("Id", id));
+            var paciente = obtenerPacientePorId.FirstOrDefault();
+            return _mapper.Map<Paciente>(paciente);
+
         }
+
+        public async Task<Paciente> ActualizarPaciente(Paciente paciente)
+        {
+            var actualizarPaciente = _mapper.Map<EntidadPaciente>(paciente);
+            await _coleccion.ReplaceOneAsync(Builders<EntidadPaciente>.Filter.Eq("Id", paciente.Id), actualizarPaciente);
+            return paciente;
+        }
+        
     }
 }

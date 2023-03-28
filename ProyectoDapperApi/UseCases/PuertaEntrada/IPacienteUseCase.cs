@@ -12,6 +12,8 @@ namespace UseCases.PuertaEntrada
         Task<List<Paciente>> ObtenerListaPacientes();
         Task<Paciente> AgregarPaciente(Paciente paciente);
 
-        Task<Paciente> ObtenerPacientePorId(int id);
+        Task<Paciente> ObtenerPacientePorId(string id);
+        Task<Paciente> ActualizarPaciente(Paciente paciente);
+        
     }
 }
