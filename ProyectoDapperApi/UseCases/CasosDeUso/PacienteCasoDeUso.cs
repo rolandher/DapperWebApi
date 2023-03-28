@@ -1,4 +1,5 @@
-﻿using Entities.Entities;
+﻿using Entities.Comandos;
+using Entities.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,15 +29,21 @@ namespace UseCases.CasosDeUso
             return await _pacienteRepositorio.ObtenerListaPacientes();
         }       
 
-        public async Task<Paciente> ObtenerPacientePorId(string id)
-        {
-            return await _pacienteRepositorio.ObtenerPacientePorId(id);
-        }
+        //public async Task<Paciente> ObtenerPacientePorId(string id)
+        //{
+        //    return await _pacienteRepositorio.ObtenerPacientePorId(id);
+        //}
 
-        public async Task<Paciente> ActualizarPaciente(Paciente paciente)
+        public async Task<Paciente> ActualizarPaciente(ActualizarPaciente actualizarPaciente, string id)
         {
-            return await _pacienteRepositorio.ActualizarPaciente(paciente);
+            return await _pacienteRepositorio.ActualizarPaciente(actualizarPaciente, id);
         }     
+
+        public async Task<Paciente> EliminarPaciente(string id)
+        {
+            return await _pacienteRepositorio.EliminarPaciente(id);
+        }
+             
 
        
     }

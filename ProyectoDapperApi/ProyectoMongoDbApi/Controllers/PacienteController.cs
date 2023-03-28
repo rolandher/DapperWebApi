@@ -32,17 +32,28 @@ namespace ProyectoMongoDbApi.Controllers
             return await _pacienteUseCase.ObtenerListaPacientes();
         }
 
-        [HttpGet("{id}")]
-        public async Task<Paciente> ObtenerPacientePorId(string id)
+        //[HttpGet("{id}")]
+        //public async Task<Paciente> ObtenerPacientePorId(string id)
+        //{
+        //    return await _pacienteUseCase.ObtenerPacientePorId(id);
+        //}
+
+        [HttpPut("{id}")]
+        public async Task<Paciente> ActualizarPaciente([FromBody] ActualizarPaciente command, string id)
         {
-            return await _pacienteUseCase.ObtenerPacientePorId(id);
+           return await _pacienteUseCase.ActualizarPaciente(_mapper.Map<ActualizarPaciente>(command), id);
         }
 
-        [HttpPut]
-        public async Task<Paciente> ActualizarPaciente([FromBody] Paciente command)
+        [HttpDelete("{id}")]
+        public async Task<Paciente> EliminarPaciente(string id)
         {
-            return await _pacienteUseCase.ActualizarPaciente(command);
-        }        
+            return await _pacienteUseCase.EliminarPaciente(id);
+        }
+
+
+
+        
+       
         
     } 
     
